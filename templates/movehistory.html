@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Move History</title>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+      ul {
+        list-style-position: inside;
+        padding-left: 0px;
+        font-size: 20px
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Move History</h1>
+    <ul>
+      {% for move in history %}
+        <li>{{ move }}</li>
+      {% endfor %}
+    </ul>
+    <p>
+      <a href="{{ url_for('checkoutcome') }}">Return to Outcome Screen</a>
+    </p>
+    <p>
+      <a href="{{ url_for('restart') }}">Restart Game</a>
+    </p>
+  </body>
+</html>

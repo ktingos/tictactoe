@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Winner</title>
+    <style media="screen">
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      {{ outcome }} Wins!
+    </h1>
+    <p>
+      <a href="{{ url_for('movehistory') }}">Move History</a>
+    </p>
+    <p>
+      <a href="{{ url_for('restart') }}">Restart Game</a>
+    </p>
+  </body>
+</html>
